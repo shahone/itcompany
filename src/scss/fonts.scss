@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'AFuturaRound Bold';
+	src: url('../fonts/a_futuraround_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/a_futuraround_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/a_futuraround_bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/a_futuraround_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/a_futuraround_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/a_futuraround_bold.svg#a_futuraround_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url('../fonts/PFBeauSansPro-BoldItalic.eot');
+  src: local('../fonts/PFBeauSansPro-BoldItalic'),
+    url('../fonts/PFBeauSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFBeauSansPro-BoldItalic.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-BoldItalic.woff') format('woff'),
+    url('../fonts/PFBeauSansPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url('../fonts/PFBeauSansPro-Black.eot');
+  src: local('../fonts/PFBeauSansPro-Black'),
+    url('../fonts/PFBeauSansPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFBeauSansPro-Black.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-Black.woff') format('woff'),
+    url('../fonts/PFBeauSansPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url('../fonts/PFBeauSansPro-Light.eot');
+  src: local('../fonts/PFBeauSansPro-Light'),
+    url('../fonts/PFBeauSansPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFBeauSansPro-Light.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-Light.woff') format('woff'),
+    url('../fonts/PFBeauSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PF BeauSans Pro Bbook';
+  src: url('../fonts/PFBeauSansPro-Bbook.eot');
+  src: local('../fonts/PFBeauSansPro-Bbook'),
+    url('../fonts/PFBeauSansPro-Bbook.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFBeauSansPro-Bbook.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-Bbook.woff') format('woff'),
+    url('../fonts/PFBeauSansPro-Bbook.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url('../fonts/PFBeauSansPro-Bold.eot');
+  src: local('../fonts/PFBeauSansPro-Bold'),
+    url('../fonts/PFBeauSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFBeauSansPro-Bold.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-Bold.woff') format('woff'),
+    url('../fonts/PFBeauSansPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url('../fonts/PFBeauSansPro-Regular.eot');
+  src: local('../fonts/PFBeauSansPro-Regular'),
+    url('../fonts/PFBeauSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFBeauSansPro-Regular.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-Regular.woff') format('woff'),
+    url('../fonts/PFBeauSansPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'Carolina';
+	src: url('../fonts/carolina.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/carolina.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/carolina.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/carolina.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/carolina.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/carolina.svg#carolina') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr-Roman';
+	src: url('../fonts/helveticaneuecyr-roman.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/helveticaneuecyr-roman.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/helveticaneuecyr-roman.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/helveticaneuecyr-roman.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/helveticaneuecyr-roman.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/helveticaneuecyr-roman.svg#helveticaneuecyr-roman') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

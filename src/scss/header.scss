@@ -1,0 +1,271 @@
+.header {
+  // height: 100vh;
+  font-weight: 900;
+  background: #fff;
+  box-shadow: inset 0 0 200px -100px #000;
+  position: relative;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 165px;
+    height: 165px;
+    pointer-events: none;
+    @include maw(1120){
+      width: 125px;
+      height: 125px;
+    }
+    @include maw-xs{
+      display: none;
+    }
+  }
+  &__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__logo-img {
+    width: 73px;
+    height: 100px;
+    margin-bottom: 5px;
+  }
+  &__logo-text {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  &__bar {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 900;
+    // background-color: #f1f;
+    margin: -21px 0 15px;
+    @include maw(900) {
+      margin-top: -60px;
+    }
+    @include maw-sm {
+      margin: 20px 0 20px;
+    }
+    @include maw-xs {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__bar-side{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include maw(900){
+      flex-direction: column;
+    }
+    @include maw-sm {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__bar-item {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    // background-color: red;
+    @include maw(900) {
+      &:nth-child(2){
+        margin-top: 20px;
+      }
+    }
+  }
+  &__select-label{
+    margin-right: 4px;
+  }
+  &__select-city{
+    color: $link;
+    background-color: transparent;
+    text-transform: uppercase;
+    max-width: 100px;
+    font-size: 10px;
+    font-weight: 900;
+    text-decoration: underline dotted;
+    @include maw(900){
+      max-width: 100%;
+    }
+  }
+  &__basket{
+    position: relative;
+    &::before{
+      content: 'Ваш заказ';
+      font-family: 'Carolina', cursive;
+      text-transform: none;
+      word-spacing: 10px;
+      font-size: 30px;
+      color: #9e9e9e;
+      position: absolute;
+      top: -75px;
+      left: -20px;
+      transform: rotate(-10deg);
+
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 50px;
+      width: 25px;
+      height: 40px;
+      border-right: 2px solid #9e9e9e;
+      border-radius: 50%;
+      transform: rotate(-10deg);
+    }
+    &::before, &::after{
+      @include maw(900){
+        display: none;
+      }
+    }
+
+  }
+  &__basket-link{
+    color: $link;
+    text-decoration: underline;
+    margin-right: 6px;
+  }
+
+  &__phone{
+    font-size: 16px;
+    span{
+      font-weight: 300;
+      background-color: $yellow1;
+      margin-right: 10px;
+    }
+  }
+  &__search{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 37%;
+      height: 2px;
+      background: #9e9e9e;
+      @include maw(900){
+        width: 20%;
+      }
+      @include maw-sm{
+        display: none;
+      }
+    }
+    &::before{
+      left: 0%;
+      @include maw(900){
+        left: 13%;
+      }
+    }
+    &::after{
+      right: 0%;
+      @include maw(900){
+        right: 13%;
+      }
+    }
+  }
+  &__guarantee{
+    width: 808px;
+    margin: 0 auto 33px;
+    padding: 23px 0;
+    text-align: center;
+    line-height: 1.4;
+    border-top: 1px solid #9e9e9e;
+    border-bottom: 1px solid #9e9e9e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include maw(900){
+      width: 100%;
+    }
+  }
+  &__guarantee-text{
+    font-family: 'AFuturaRound Bold';
+    font-size: 23px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  &__guarantee-subtext{
+    font-family: 'PF BeauSans Pro';
+    font-size: 15px;
+    font-weight: 400;
+  }
+  &__guarantee-link {
+    text-decoration: underline dotted;
+    color: $link;
+  }
+  &__guarantee-link, &__basket-link {
+    @media (hover) {
+      &:hover{
+        color: darken($link, 5);
+      }
+      &:active{
+        color: darken($link, 10);
+      }
+    }
+    @media (hover: none) {
+      &:active{
+        color: darken($link, 10);
+      }
+    }
+  }
+  &__menu{
+    // height: 155px;
+    background: #2b2b2b;
+    padding: 20px 0;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__menu-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    // flex: 1 1 auto;
+    @include maw-s {
+      // width: 600px;
+      overflow-x: auto;
+      justify-content: flex-start;
+    }
+  }
+  &__menu-item {
+    transition: 1s;
+    flex: 1 1 130px;
+    height: 115px;
+    @include maw-s {
+      flex: 1 0 100px;
+      height: 100px;
+    }
+  }
+
+  &__menu-link-img{
+    // width: 49px;
+    height: 45px;
+    object-fit: contain;
+    filter: brightness(10);
+    transition: .15s;
+    margin-bottom: 15px;
+  }
+}

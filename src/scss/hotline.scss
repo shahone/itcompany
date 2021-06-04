@@ -1,0 +1,251 @@
+.hotline {
+  background: #eaebec;
+  box-shadow: 0px 20px 30px -5px rgba(#000, .3);
+  position: relative;
+  @include maw-s {
+    padding-bottom: 20px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    @include maw-s{
+      flex-direction: column;
+    }
+  }
+	&__main {
+    // max-width: fit-content !important;
+    padding: 35px 15px 50px 0;
+    // margin-right: 30px;
+    text-align: center;
+    align-self: flex-start;
+    @include maw-sm {
+      padding: 20px 15px 20px 0;
+    }
+    @include maw-s{
+      padding: 20px 0px 20px 0;
+    }
+  }
+	&__title {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 25px;
+    @include maw-sm {
+      margin-bottom: 10px;
+    }
+  }
+	&__call {
+    // width: 547px;
+    height: 102px;
+    margin: 0 auto 25px;
+    background: url(../images/hotline/border.png) center/contain no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include maw-md {
+      height: 80px;
+    }
+    @include maw-xs {
+      margin-bottom: 5px;
+    }
+  }
+	&__call-text {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    @include maw-sm {
+      font-size: 14px;
+    }
+
+  }
+	&__call-phone {
+    font-family: 'AFuturaRound Bold' ;
+    font-size: 31px;
+    text-transform: uppercase;
+    @include maw-md {
+      font-size: 25px;
+    }
+    @include maw-sm {
+      font-size: 20px;
+    }
+    @include maw-xxs {
+      font-size: 17px;
+    }
+  }
+	// &__call-link { }
+	// &__request { }
+	&__request-text {
+    font-size: 29px;
+    font-weight: 700;
+    font-style: italic;
+    color: #878d98;
+    line-height: 18px;
+    margin-bottom: 23px;
+    span {
+      font-size: 12px;
+    }
+  }
+	&__form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 31px;
+    @include maw-md{
+      flex-direction: column;
+      align-items: center;
+    }
+    @include maw-sm{
+      margin-bottom: 20px;
+    }
+  }
+	&__form-name.my-input, &__form-phone.my-input{
+    width: 205px;
+    padding-right: 10px;
+    @include maw-md{
+      margin: 0 0 10px 0;
+    }
+  }
+  &__form-name , &__form-phone {
+    margin: 0 5px;
+  }
+  // &__form-button {
+  //   height: auto;
+  //   padding: 8px 20px 1px;
+  //   margin: 0 5px;
+  // }
+	&__form-button.gradient {
+    width: auto;
+    height: auto;
+    padding: 0 20px;
+    border-radius: 6px;
+    color: $black;
+    margin-left: 10px;
+    // border: 1px solid transparent;
+
+    &::after{
+      border: 1px solid #f9cf00;
+      border-radius: 6px;
+      opacity: 1;
+    }
+    @media(hover){
+      &:hover::after{
+        opacity: .6;
+      }
+      &:active{
+        &::after {
+          background: $gradient-y-active;
+          box-shadow: inset 0 2px 5px -2px #000;
+        }
+        span{
+          transform: translateY(1px);
+        }
+      }
+    }
+    @media(hover: none) {
+      &:active {
+        &::after {
+          background: $gradient-y-active;
+          box-shadow: inset 0 2px 5px -2px #000;
+        }
+        span{
+          transform: translateY(1px);
+        }
+      }
+    }
+    @include maw-md{
+      margin: 10px 0 0 0;
+      // padding: 20px;
+      vertical-align: middle;
+      padding: 8px 20px 6px;
+    }
+  }
+	&__request-note {
+    font-size: 12px;
+    font-weight: 500;
+    color: #363636;
+  }
+	&__dispatcher {
+    background: #fff;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 37px 0px 35px 20px;
+    position: relative;
+    z-index: 2;
+    @include maw-s {
+      width: fit-content;
+      margin: 0 auto;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 24%;
+      left: -116px;
+      width: 193px;
+      height: 236px;
+      background: url(../images/hotline/h-phone.png) center/contain no-repeat;
+      @include maw(900) {
+        top: 40%;
+      }
+      @include maw(630) {
+        display: none;
+      }
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 1000%;
+      height: 100%;
+      background-color: #fff;
+      @include maw-s{
+        display: none;
+      }
+    }
+  }
+	&__dispatcher-title {
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+	&__dispatcher-photo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-bottom: 10px;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../images/hotline/border2.png) center/cover no-repeat;
+    }
+  }
+	// &__dispatcher-photo-img { }
+	&__dispatcher-name {
+    max-width: 260px;
+    font-family: 'AFuturaRound Bold', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    span{
+      background: #fff000;
+    }
+  }
+	&__dispatcher-exp {
+    font-size: 11px;
+    font-weight: 500;
+    span {
+      font-size: 28px;
+    }
+  }
+}

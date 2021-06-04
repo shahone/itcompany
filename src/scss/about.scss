@@ -1,0 +1,99 @@
+.about {
+  background: #dadbdd;
+  padding: 62px 0 80px;
+  box-shadow: 0px 40px 30px -15px rgba(#000, .8);
+  @include maw-sm{
+    padding: 40px 0 40px;
+  }
+  @include maw-s{
+    padding: 20px 0 40px;
+  }
+  @include maw-xs {
+    padding: 20px 0 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+	&__title {
+    font-family: 'AFuturaRound Bold', sans-serif;
+    font-size: 35px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 45px;
+    @include maw-sm{
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    @include maw-s {
+      line-height: 1.4;
+    }
+    @include maw-xxs {
+      font-size: 23px;
+    }
+  }
+	&__content {
+    display: flex;
+  }
+	&__img-wrap {
+    flex: 1 1 36%;
+    position: relative;
+    @include maw-s {
+      flex: auto;
+    }
+  }
+	&__img {
+    position: absolute;
+    z-index: 1;
+    left: -17%;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 357px;
+    height: 260px;
+    @include maw-s {
+      transform: translate(10%, 50%);
+    }
+    @include maw-xs {
+      display: none;
+    }
+  }
+	&__text-block {
+    flex: 1 1 74%;
+    display: flex;
+    flex-direction: column;
+    @include maw-md{
+      position: relative;
+      z-index: 2;
+      padding: 10px;
+      background-color: rgba(#fff, .7);
+    }
+    @include maw-s {
+      flex: 100%;
+    }
+  }
+	&__subtitle {
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    @include maw-s {
+      margin-bottom: 20px;
+    }
+  }
+	&__text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    span{
+      font-weight: 700;
+    }
+  }
+  &__text:not(:last-child){
+    margin-bottom: 22px;
+    @include maw-s {
+      margin-bottom: 10px;
+    }
+  }
+}

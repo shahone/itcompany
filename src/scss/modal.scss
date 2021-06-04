@@ -1,0 +1,163 @@
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, .8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	&__content {
+    position: relative;
+    margin: 0 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+	&__close {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    @media(hover){
+      &:hover{
+        filter: brightness(.1);
+      }
+      &:active{
+        transform: translateY(1px);
+      }
+    }
+    @media(hover: none){
+      &:active{
+        transform: translateY(1px);
+      }
+    }
+    @include maw-xs {
+      top: 20px;
+      right: 20px;
+    }
+  }
+  &__text {
+    font-family: 'AFuturaRound Bold', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @include maw-xxs {
+      font-size: 30px;
+    }
+  }
+  &__desc {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .2px;
+    line-height: 20px;
+    color: #363636;
+  }
+	// &__close-img { }
+}
+
+.thanks {
+  &__content{
+    max-width: 505px;
+    background: #fff;
+    position: relative;
+    padding: 44px;
+    @include maw-s {
+      max-width: 300px;
+      height: 200px;
+      text-align: center;
+    }
+    @include maw-xxs {
+      max-width: 250px;
+      height: 170px;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../images/modal/thanks.png) center/99% no-repeat;
+      pointer-events: none;
+      @include maw-s {
+        background: url(../images/modal/call.png) center/99% no-repeat;
+      }
+    }
+  }
+}
+
+.request {
+  &__content{
+    max-width: 505px;
+    padding: 25px 125px 25px 45px;
+    // align-content: flex-start;
+    // justify-content: flex-start;
+    @include maw-md {
+      justify-content: center;
+      align-items: center;
+      padding: 20px 25px;
+      text-align: center;
+    }
+    @include maw-sm {
+      max-width: 400px;
+      height: 260px;
+      padding-top: 40px;
+    }
+    @include maw-xs{
+      height: 350px;
+      width: 260px;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../images/modal/call.png) center/contain no-repeat;
+      pointer-events: none;
+      @include maw-xs{
+        background: url(../images/modal/call2.png) center/contain no-repeat;
+      }
+    }
+
+  }
+  &__form {
+    flex-direction: column;
+
+  }
+  &__text {
+    margin-bottom: 26px;
+    @include maw-sm {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    @include maw-xs{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &__desc {
+    margin: 10px 0 18px;
+    @include maw-sm {
+      margin: 5px 0 5px;
+    }
+  }
+  .my-input {
+    margin: 0 0 10px 0;
+    width: 290px;
+    @include maw-xs {
+      width: 100%;
+    }
+  }
+  .gradient{
+    max-width: fit-content;
+    padding: 8px 18px;
+  }
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>IT-Company</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google" content="notranslate">
+  <!--! адаптив -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--! адаптив + запретить масштабирование -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+  <!-- ! Описание сайта до 140 символов -->
+  <meta name="description" content="ITCOMPANY - Компьютерная помощь на дому в Москве и московской области">
+  <!--! yandex  Ключевые слова/словосочетания до 20-->
+  <meta name="keywords" content="Компьютеры Ноутбуки Вирусы Windows ИТ Аутсорсинг Ремонт">
+  <meta name="author" content="Ruslan Shah">
+  <!-- <meta name="copyright" content="владелец авторских прав"> -->
+  <!-- <meta name="address" content="адрес владельца/фирмы"> -->
+  <!--! запрет индексации полностью -->
+  <!-- <meta name="robots" content="none"> -->
+  <!--! запрет индексации картинок и ссылок -->
+  <!-- <meta name="robots" content="noimageindex, nofollow"> -->
+  <!--! запретить номера-ссылки -->
+  <!-- <meta name="format-detection" content="telephone-no"> -->
+  <!--! обновление страницы при ошибке (через сколько и куда) -->
+  <!-- <meta http-equiv="refresh" content="0; url="> -->
+  <!--! favicon -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#0e1d28">
+  <meta name="msapplication-TileColor" content="#0e1d28">
+  <meta name="theme-color" content="#ff0000"> -->
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#2a2a29">
+  <!-- ! своя иконка -->
+  <!-- <link rel="shortcut icon" href="" type="image/png"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/main.min.js" defer></script>
+</head>
+
+<body>
+  <!-- ontouchstart="" -->
+  <div class="wrapper">
+    <header class="header">
+      <!-- <div class="header__mark">гарантия<span>качества</span></div> -->
+      <div class="header__mark">
+        <img src="images/header/mark.png" alt="" class="header__mark-img">
+      </div>
+      <div class="header__main">
+        <div class="container">
+          <div class="header__logo">
+            <img class="header__logo-img" src="images/header/logo.png" alt="logo">
+            <p class="header__logo-text">it-company</p>
+          </div>
+          <div class="header__bar">
+            <div class="header__bar-side">
+              <div class="header__bar-item header__select">
+                <p class="header__select-label">город:</p>
+                <select name="city" class="header__select-city">
+                  <option value="1"><span>Москва</span></option>
+                  <option value="2">Владивосток</option>
+                  <option value="3">Казань</option>
+                  <option value="4">Санкт-Петербург</option>
+                  <option value="4">Екатеринбург</option>
+                </select>
+              </div>
+              <div class="header__bar-item header__basket">
+                <a href="" class="header__basket-link">в корзине:</a>
+                <p class="header__basket-inner">159шт.-800000руб.</p>
+              </div>
+            </div>
+            <div class="header__bar-side header__bar-side-right">
+              <a class="header__bar-item header__call call">
+                заказать звонок
+              </a>
+              <a class="header__bar-item header__phone" href="tel:+78001234567"><span>8 (800)</span>123-45-67</a>
+            </div>
+          </div>
+          <div class="header__search">
+            <input type="text" class="header__search-field my-input" placeholder="поиск по сайту">
+          </div>
+          <div class="header__guarantee">
+            <p class="header__guarantee-text">Мы гарантируем честные цены!</p>
+            <p class="header__guarantee-subtext">
+              Наш инженер завысил цену? <a class="header__guarantee-link" href="#">Напишите письмо директору!</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <nav class="header__menu">
+        <div class="container">
+          <ul class="header__menu-list">
+            <li class="header__menu-item ">
+              <a class="header__menu-link gradient" href="#">
+                <img class="header__menu-link-img" src="images/menu/g/g-flag.svg" alt="icon: flag">
+                о нас
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link gradient" href="#">
+                <img class="header__menu-link-img" src="images/menu/g/g-users.svg" alt="icon: users">
+                сотрудники
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link gradient" href="#">
+                <img class="header__menu-link-img" src="images/menu/g/g-bulb.svg" alt="icon: bulb">
+                вакансии
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link gradient" href="#">
+                <img class="header__menu-link-img" src="images/menu/g/g-pen.svg" alt="icon: pen">
+                статьи</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link gradient" href="#">
+                <img class="header__menu-link-img" src="images/menu/g/g-clip.svg" alt="icon: clip">
+                документы</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link gradient" href="#">
+                <img class="header__menu-link-img" src="images/menu/g/g-balloon.svg" alt="icon: balloon">
+                отзывы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="services">
+        <div class="container">
+          <div class="services__col services__col-1">
+            <h2 class="services__title">Частным<br><span>клиентам</span></h2>
+            <ul class="services__list">
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">компьютеры</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">ноутбуки</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">вирусы</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">интернет и wi-fi</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">windows и<br>другие os</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">iphone / ipad</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">установка и настройка программ</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">домашняя локальная сеть</a>
+              </li>
+            </ul>
+            <div class="services__img-wrap">
+              <img class="services__img" src="images/services/men1.png" alt="photo: men">
+            </div>
+          </div>
+          <div class="services__col services__col-2">
+            <h2 class="services__title">юридическим<br><span>лицам</span></h2>
+            <ul class="services__list">
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">ит аутсорсинг</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">настройка серверов</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">проектирование и монтаж лвс</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">восстановление и заправка<br>картриджей</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">ip телефония</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">ремонт принтеров</a>
+              </li>
+              <li class="services__list-item">
+                <a class="services__link gradient" href="#">ремонт копиров и мфу</a>
+              </li>
+            </ul>
+            <div class="services__img-wrap">
+              <img class="services__img" src="images/services/men2.png" alt="photo: men">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hotline">
+        <div class="container">
+          <div class="hotline__main">
+            <h3 class="hotline__title">
+              Только у нас!<br>Бесплатная горячая линия по консультированию и удаленому оказанию компьютерной помощи
+            </h3>
+            <div class="hotline__call">
+              <p class="hotline__call-text">Возникли проблемы?</p>
+              <p class="hotline__call-phone">звоните <a class="hotline__call-link" href="tel:+78001234567">8 (800)
+                  123-45-67</a></p>
+            </div>
+            <div class="hotline__request">
+              <p class="hotline__request-text">или<br><span>оставьте заявку на выезд специалиста</span></p>
+              <form class="hotline__form form" action="#">
+                <input class="hotline__form-name form__input my-input" name="name" type="text" placeholder="имя">
+                <input class="hotline__form-phone form__input my-input" name="phone" type="number"
+                  placeholder="телефон">
+                <button class="hotline__form-button gradient" type="submit"><span>отправить</span></button>
+              </form>
+              <p class="hotline__request-note">Время реагирования на заявку - от 2 часов. Выезжаем в любой район Москвы
+                и ближайшие пригороды.</p>
+            </div>
+          </div>
+          <div class="hotline__dispatcher">
+            <h4 class="hotline__dispatcher-title">вас консультирует</h4>
+            <div class="hotline__dispatcher-photo">
+              <img class="hotline__dispatcher-photo-img" src="images/hotline/disp.jpg" alt="photo: man">
+            </div>
+            <p class="hotline__dispatcher-name"><span>старперов алексей&nbsp;михайлович</span></p>
+            <p class="hotline__dispatcher-exp">Cтаж работы<br><span>7 лет</span></p>
+          </div>
+        </div>
+      </section>
+      <div class="block">
+        <div class="container">
+          <section class="block__col reviews">
+            <div class="block__heading">
+              <h2 class="block__title">новые отзывы</h2>
+              <a class="block__title-link" href="#">все</a>
+            </div>
+            <div class="block__cards reviews__cards">
+              <div class="block__card reviews__card">
+                <p class="reviews__card-author">Алёна Романова</p>
+                <p class="reviews__card-text">
+                  Пользуюсь этой моделью уже несколько месяцев, за это время приготовила огромное множество различных
+                  блюд и сумела
+                  выявить как положительные стороны так и отрицательные этой мультиварки.
+                </p>
+              </div>
+              <div class="block__card reviews__card">
+                <p class="reviews__card-author">Павлов Андрей</p>
+                <p class="reviews__card-text">
+                  Жена взяла эту мультиварку пол года назад. Через 4 месяца отказал клапан, пришлось вернуть, обменяли
+                  на новую. В целом
+                  довольны. Готовить в ней быстро и очень удобно, замечательная вещь. Место на кухне конечно занимает
+                  много но с ее
+                  появлением без нее никак!
+                </p>
+              </div>
+              <div class="block__card reviews__card">
+                <p class="reviews__card-author">SветлячОК</p>
+                <p class="reviews__card-text">
+                  Друзья! Захотелось и мне поделиться с вами впечатлениями об этом чудесном изобретении для кухни!
+                </p>
+              </div>
+              <div class="block__card reviews__card hidden">
+                <p class="reviews__card-author">Алёна Романова</p>
+                <p class="reviews__card-text">
+                  Пользуюсь этой моделью уже несколько месяцев, за это время приготовила огромное множество различных
+                  блюд и сумела
+                  выявить как положительные стороны так и отрицательные этой мультиварки.
+                </p>
+              </div>
+              <div class="block__card reviews__card hidden">
+                <p class="reviews__card-author">Павлов Андрей</p>
+                <p class="reviews__card-text">
+                  Жена взяла эту мультиварку пол года назад. Через 4 месяца отказал клапан, пришлось вернуть, обменяли
+                  на новую. В целом
+                  довольны. Готовить в ней быстро и очень удобно, замечательная вещь. Место на кухне конечно занимает
+                  много но с ее
+                  появлением без нее никак!
+                </p>
+              </div>
+              <div class="block__card reviews__card hidden">
+                <p class="reviews__card-author">SветлячОК</p>
+                <p class="reviews__card-text">
+                  Друзья! Захотелось и мне поделиться с вами впечатлениями об этом чудесном изобретении для кухни!
+                </p>
+              </div>
+            </div>
+            <div class="block__load">
+              <a class="block__load-link load-reviews" href="#">загрузить ещё</a>
+              <p class="block__load-details">показано: 3 записи из 114</p>
+            </div>
+          </section>
+          <section class="block__col articles">
+            <div class="block__heading">
+              <h2 class="block__title">новые статьи</h2>
+              <a class="block__title-link" href="#">все</a>
+            </div>
+            <div class="block__cards articles__cards">
+              <div class="block__card articles__card">
+                <p class="articles__card-date">20 февраля 2013</p>
+                <h5 class="articles__card-title">Спор С Судьбой</h5>
+              </div>
+              <div class="block__card articles__card">
+                <p class="articles__card-date">18 февраля 2013</p>
+                <h5 class="articles__card-title">Как Можно Заработать Денег В Интернет Сети?</h5>
+              </div>
+              <div class="block__card articles__card">
+                <p class="articles__card-date">5 февраля 2013</p>
+                <h5 class="articles__card-title">Можно Ли Оценить Мотивацию Человека На Собеседовании?</h5>
+              </div>
+              <div class="block__card articles__card">
+                <p class="articles__card-date">1 февраля 2013</p>
+                <h5 class="articles__card-title">Куда Пойти Работать Выпускнику? Программы Стажировок В Мировых
+                  Компаниях!</h5>
+              </div>
+              <div class="block__card articles__card hidden">
+                <p class="articles__card-date">1 февраля 2013</p>
+                <h5 class="articles__card-title">Куда Пойти Работать Выпускнику? Программы Стажировок В Мировых
+                  Компаниях!</h5>
+              </div>
+              <div class="block__card articles__card hidden">
+                <p class="articles__card-date">1 февраля 2013</p>
+                <h5 class="articles__card-title">Куда Пойти Работать Выпускнику? Программы Стажировок В Мировых
+                  Компаниях!</h5>
+              </div>
+              <div class="block__card articles__card hidden">
+                <p class="articles__card-date">1 февраля 2013</p>
+                <h5 class="articles__card-title">Куда Пойти Работать Выпускнику? Программы Стажировок В Мировых
+                  Компаниях!</h5>
+              </div>
+            </div>
+            <div class="block__load">
+              <a class="block__load-link load-articles" href="#">загрузить ещё</a>
+              <p class="block__load-details">показано: 4 записи из 25</p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section class="about">
+        <div class="container">
+          <h1 class="about__title">ITCOMPANY - Компьютерная помощь на дому в Москве и московской области</h1>
+          <div class="about__content">
+            <div class="about__img-wrap"><img class="about__img" src="images/about/notebook.png" alt="img: notebook">
+            </div>
+            <div class="about__text-block">
+              <p class="about__subtitle">
+                Компьютерный сервис «ITCOMPANY» — официальный партнер крупнейшей домашней сети МОСКВЫ INTELNET,
+                оказывающий услуги компьютерной помощи и ремонту ноутбуков на дому и в сервисном центре, а также услуги
+                по подключению бытовой техники.
+              </p>
+              <p class="about__text">
+                Наша компания работает на рынке компьютерных услуг Москвы с 2007 года и оказывает компьютерную помощь
+                все желающим жителям города. За время работы компания ItCompany зарекомендовала себя как
+                <span>профессиональный, компетентный и мобильный IT-сервис,</span> готовый приехать в Ваш дом, для
+                решения любой
+                компьютерной задачи.
+              </p>
+              <p class="about__text">
+                Компания АйтиКомпани предлагает Вам полный спектр IT-услуг и компьютерного обслуживания. <span>Наиболее
+                  восстребоваными являются в Москве:</span> компьютерная помощь на дому; ремонт, настройка, установка
+                компьютеров
+                и локальных сетей на выезде и в сервисном центре.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">о нас</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">сотрудники</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">вакансии</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">статьи</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">документы</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">отзывы</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">контакты</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">частным лицам</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">юридическим лицам</a></li>
+          </ul>
+        </nav>
+        <div class="footer__main">
+          <div class="footer__col time">
+            <h3 class="footer__title">часы<br><span>работы</span></h3>
+            <div class="footer__info">
+              <p class="footer__info-item footer__working-hours">Колл-центр — круглосуточно<br>Выезд инженеров — 9:00 -
+                21:00</p>
+            </div>
+          </div>
+          <div class="footer__col contacts">
+            <h3 class="footer__title contacts__title">наши<br><span>контакты</span></h3>
+            <div class="footer__info">
+              <p class="footer__info-item footer__address">191317, Россия, г.&nbsp;Москва, пр.&nbsp;Космонавтов д.66,
+                корп.5, офис&nbsp;112</p>
+              <p class="footer__info-item footer__phone">Телефон: <a class="footer__phone-link"
+                  href="tel:+78001234567">8 (800) 123-45-67</a></p>
+              <p class="footer__info-item footer__email">E-mail: <a class="footer__email-link"
+                  href="mailto:info@itcompany.ru">info@itcompany.ru</a></p>
+            </div>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social-block">
+              <p class="footer__social-title">мы в социальных сетях:</p>
+              <div class="footer__social-links">
+                <a class="footer__social-link" href="#">
+                  <svg class="icon">
+                    <use href="images/footer/social/sprite.svg#v"></use>
+                  </svg>
+                </a>
+                <a class="footer__social-link" href="#">
+                  <svg class="icon">
+                    <use xlink:href="images/footer/social/sprite.svg#f"></use>
+                  </svg>
+                </a>
+                <a class="footer__social-link" href="#">
+                  <svg class="icon">
+                    <use href="images/footer/social/sprite.svg#t"></use>
+                  </svg>
+                </a>
+                <a class="footer__social-link" href="#">
+                  <svg class="icon">
+                    <use xlink:href="images/footer/social/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <a class="footer__map" href="#">карта сайта</a>
+            <a class="footer__call call" href="#">заказать звонок</a>
+          </div>
+        </div>
+        <div class="footer__details">
+          <p class="footer__copyright">© 2016 ООО «IT Company». Все права охраняются законом об авторском праве.</p>
+          <a class="footer__studio" href="#">Разработано в веб-студии</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="modal thanks">
+    <div class="modal__content thanks__content">
+      <button class="modal__close">
+        <img class="modal__close-img" src="images/modal/close.png" alt="close">
+      </button>
+      <p class="modal__text thanks__text">спасибо</p>
+      <p class="modal__desc">Наши менеджеры получили ваш запрос и перезвонят вам в течение 20 минут.</p>
+    </div>
+  </div>
+  <div class="modal request" style="display:none">
+    <div class="modal__content request__content">
+      <button class="modal__close">
+        <img class="modal__close-img" src="images/modal/close.png" alt="close">
+      </button>
+      <p class="modal__text request__text">заказать звонок</p>
+      <form class="hotline__form request__form form" action="#">
+        <input class="hotline__form-name form__input my-input" type="text" name="name" placeholder="имя">
+        <input class="hotline__form-phone form__input my-input" type="number" name="phone" placeholder="телефон">
+        <p class="modal__desc request__desc">Наши менеджеры перезвонят вам в течение 20 минут и с удовольствием ответят
+          на ваши вопросы.</p>
+        <button class="hotline__form-button gradient" type="submit"><span>перезвоните мне</span></button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

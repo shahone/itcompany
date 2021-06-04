@@ -1,0 +1,326 @@
+.footer {
+  // height: 100vh;
+  background: #2b2b2b;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+	&__menu {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    // min-width: 100%;
+    padding: 42px 0;
+    border-bottom: 1px solid #1d1d1d;
+    box-shadow: 0 1px 0 rgba(#fff, .1);
+    @include maw(1040) {
+      overflow-x: auto;
+    }
+    @include maw-sm {
+      padding: 30px 0;
+    }
+  }
+	&__menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+	&__menu-link {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 18px;
+    white-space: nowrap;
+    @media(hover){
+      &:hover, &:focus{
+        color: #fff000;
+      }
+    }
+    @media(hover: none) {
+      &:active {
+        color: #fff000;
+      }
+    }
+  }
+	&__main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 38px 0 28px;
+    color: #afafaf;
+    border-bottom: 1px solid #1d1d1d;
+    box-shadow: 0 1px 0 rgba(#fff, .1);
+    @include maw-s {
+      flex-direction: column;
+      // align-items: center;
+    }
+  }
+	&__col {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: auto;
+    @include maw(900) {
+      flex-direction: column;
+    }
+    @include maw-s {
+      align-items: center;
+    }
+  }
+  &__col.time{
+    flex: 55%;
+    @include maw(1040) {
+      flex: 50%;
+    }
+    @include maw-s {
+      margin-bottom: 30px;
+    }
+  }
+  &__col.contacts{
+    flex: 45%;
+    @include maw(1040) {
+      flex: 50%;
+    }
+  }
+  &__social{
+    flex: 100%;
+  }
+	&__title {
+    align-self: stretch;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 0.7;
+    text-transform: uppercase;
+    padding: 4px 18px 0 45px;
+    background: url(../images/footer/icon1.png) 0 10px/20.5% no-repeat;
+    border-right: 1px solid #1d1d1d;
+    box-shadow: 1px 0 0 rgba(#fff, .1);
+    @include maw(900) {
+      margin-bottom: 20px;
+      align-self: flex-start;
+    }
+    @include maw-s {
+     align-self: center;
+    }
+    span{
+      margin-top: 0;
+      font-size: 14px;
+    }
+  }
+  &__title.contacts__title{
+    padding-left: 35px;
+    background: url(../images/footer/icon2.png) 0 10px/15.5% no-repeat;
+  }
+	&__info {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.3;
+    padding-left: 18px;
+    @include maw(900){
+      padding-left: 0;
+    }
+    @include maw-s {
+     text-align: center;
+    }
+  }
+	&__info-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__phone {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  &__phone-link {
+    color: #fff000;
+  }
+  &__email-link {
+    text-decoration: underline;
+    color: $link;
+    cursor: pointer;
+    @media (hover) {
+      &:hover{
+        color: darken($link, 5);
+      }
+      &:active{
+        color: darken($link, 10);
+      }
+    }
+    @media (hover: none) {
+      &:active{
+        color: darken($link, 10);
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    margin: -32px 310px 0 0;
+    color: #959595;
+    white-space: nowrap;
+    @include maw(1040) {
+      justify-content: space-between;
+      margin: 30px 0 0 0;
+
+    }
+    @include maw-sm{
+      flex-direction: column-reverse;
+    }
+  }
+  &__social-block {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+    @include maw-sm{
+      // margin: 0 0 20px 0;
+      margin: 0;
+    }
+    @include maw-xs {
+     flex-direction: column;
+    }
+  }
+  &__social-title {
+    margin-right: 15px;
+    @include maw-xs {
+      margin: 0 0 20px 0;
+    }
+  }
+  &__social-links {
+    display: flex;
+  }
+  &__social-link {
+    width: 36px;
+    height: 36px;
+    background: #757575;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: .15s;
+    .icon{
+      height: 20px;
+      fill: #fff;
+      filter: drop-shadow(10px 10px 6px #000);
+    }
+    @media(hover){
+      &:hover{
+        &:nth-child(1){
+          background: #54769c;
+        }
+        &:nth-child(2){
+          background: #004899;
+        }
+        &:nth-child(3){
+          background: #00b9ee;
+        }
+        &:nth-child(4){
+          background: #ea5b0c;
+        }
+      }
+      &:active{
+        .icon{
+          filter: drop-shadow(8px 8px 6px #000);
+        }
+        &:nth-child(1){
+          background: darken(#54769c, 5);
+        }
+        &:nth-child(2){
+          background: darken(#004899, 5);
+        }
+        &:nth-child(3){
+          background: darken(#00b9ee, 5);
+        }
+        &:nth-child(4){
+          background: darken(#ea5b0c, 5);
+        }
+      }
+    }
+    @media(hover: none) {
+      &:active {
+        &:nth-child(1){
+          background: #54769c;
+        }
+        &:nth-child(2){
+          background: #004899;
+        }
+        &:nth-child(3){
+          background: #00b9ee;
+        }
+        &:nth-child(4){
+          background: #ea5b0c;
+        }
+      }
+    }
+  }
+  &__social-link:nth-child(2){
+    .icon{
+      height: 16px;
+    }
+  }
+  &__social-link:nth-child(4){
+    .icon{
+      height: 18px;
+    }
+  }
+
+  &__map {
+    margin-right: 25px;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 5px 10px 5px 16px;
+    background: url(../images/footer/info.svg) 0 30%/6% no-repeat;
+
+    @include maw-sm{
+      margin: 0 0 20px 0;
+    }
+  }
+  &__call.call {
+    background: url(../images/footer/phone-square.svg) 0 50%/12% no-repeat;
+    @include maw-sm {
+      margin-bottom: 20px;
+    }
+  }
+	&__studio {
+    text-decoration: underline;
+
+  }
+  &__map, &__call, &__studio {
+    @media (hover) {
+      &:hover{
+        color: darken(#afafaf, 20);
+      }
+      &:active{
+        color: darken(#afafaf, 30);
+      }
+    }
+    @media (hover: none) {
+      &:active{
+        color: darken(#afafaf, 20);
+      }
+    }
+  }
+  &__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #afafaf;
+    padding: 37px 0 60px;
+    text-align: center;
+    @include maw-sm{
+      flex-direction: column;
+      padding: 25px;
+      line-height: 1.5;
+    }
+  }
+  &__copyright {
+    @include maw-sm{
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@mixin miw($w){
+  @media (min-width: $w + 'px'){
+    @content;
+  }
+}
+@mixin maw($w){
+  @media (max-width: $w + 'px'){
+    @content;
+  }
+}
+@mixin miw-xxl{
+  @media (max-width: 1400px){
+    @content;
+  }
+}
+@mixin maw-xl{
+  @media (max-width: 1399px){
+    @content;
+  }
+}
+@mixin maw-lg{
+  @media (max-width: 1199px){
+    @content;
+  }
+}
+@mixin maw-md{
+  @media (max-width: 991px){
+    @content;
+  }
+}
+@mixin maw-sm{
+  @media (max-width: 767px){
+    @content;
+  }
+}
+@mixin maw-s{
+  @media (max-width: 575px){
+    @content;
+  }
+}
+@mixin maw-xs{
+  @media (max-width: 424px){
+    @content;
+  }
+}
+@mixin maw-xxs{
+  @media (max-width: 374px){
+    @content;
+  }
+}
+@mixin maw-3xs{
+  @media (max-width: 320px){
+    @content;
+  }
+}
